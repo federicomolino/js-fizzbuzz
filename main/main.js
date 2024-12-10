@@ -11,6 +11,14 @@ for (let i = 1; i <= 20; i++) {
 
     // stampo il restante dei numeri
    } else{
-        console.log(i);
+
+        // verifico se sono multipli di 5
+        if (i % 5 == 0) {
+            console.log(`${i} Buzz`);
+        }
+        // stampo i numeri che non sono multipli di 3, 5 o entrambi
+        else{
+            console.log(i);
+        }
    }
 }
