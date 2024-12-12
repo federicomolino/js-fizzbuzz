@@ -9,16 +9,13 @@ for (let i = 1; i <= 100; i++) {
    } else if (i % 3 == 0) {
         console.log(`Fizz`);
 
-    // stampo il restante dei numeri
-   } else{
-
-        // verifico se sono multipli di 5
-        if (i % 5 == 0) {
-            console.log(`Buzz`);
-        }
+    // verifico se sono solo multipli di 5
+   } else if (i % 5 == 0){
+        console.log(`Buzz`);
+    }
         // stampo i numeri che non sono multipli di 3, 5 o entrambi
         else{
             console.log(i);
         }
-   }
+   
 }
